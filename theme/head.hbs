@@ -1,0 +1,29 @@
+<!--MathJax Support-->
+<script>
+    MathJax = {
+        loader: {
+            load: [
+                '[tex]/colorv2',
+                '[tex]/physics',
+            ],
+        },
+        tex: {
+            packages: {'[+]': ['color', 'physics']},
+            inlineMath: [ ['$', '$'] ],
+            displayMath: [ ['$$', '$$'] ],
+            processEscapes: true,
+            processEnvironments: true,
+            processRefs: true,
+            tags: 'ams',
+            tagSide: 'right',
+            macros: {
+                n: "\\\\",
+            },
+            // component configurations
+            physics: {
+                italicdiff: false,
+            },
+        },
+    };
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml-full.js"></script>
